@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<meta charset=utf-8>
+		<meta name="author" content="Andre Anjos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>The Cake Is A Lie</title>
+		
+		<link rel="stylesheet" href="css/main.css" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>
+		<script type="text/javascript" src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+	<body>
+    <div id="gui">
+      <div id="flavourDiv">
+        <select id="flavour-dropDown" onChange="changeFlavour()">
+          <option value="raspberry">Raspberry Flavour</option>
+          <option value="chocolate">Chocolate Flavour</option>
+          <option value="blueberry">Blueberry Flavour</option>
+          <option value="lemon">Lemon Flavour</option>
+        </select>
+      </div>
+      <input id="name-input" type="text" value="" placeholder="Your Name" maxlength="10">
+      <button id="changeName-btn" type="button" onclick="changeName()">Change Name</button>
+      <button id="lights-out" type="button" onclick="lightsOut()">Turn Lights Off</button>
+		  <button id="blow-me" type="button" onclick="blowCandle()">BLOW CANDLE!</button>
+      <div id="profile">
+        <a href="http://andre-anjos.com/" target="_blank"><img id="photo" src="imgs/andre-photo.jpg"></a>
+        <p id="copyright">&copy; Andre Anjos</p>
+      </div>
+    </div>
+    
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
